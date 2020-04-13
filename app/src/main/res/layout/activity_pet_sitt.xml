@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetSittActivity">
+
+    <TextView
+        android:id="@+id/im_sitter"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/ic_people_outline_black_24dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_datoscontacto"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_datoscontacto"
+        android:layout_width="249dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="48dp"
+        android:gravity="center"
+        android:text="@string/contacto"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_review"
+        android:layout_width="334dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/review"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_datoscontacto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

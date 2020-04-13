@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPetCare">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="8sp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logopetcare" />
+
+    <EditText
+        android:id="@+id/user_login"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:background="@drawable/bordes"
+        android:hint="@string/login_user"
+        android:inputType="text"
+        android:padding="10sp"
+        android:textAlignment="textStart"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/pass_login"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:background="@drawable/bordes"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="10sp"
+        android:textAlignment="textStart"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_login" />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:background="@drawable/boton_bordes"
+        android:text="@string/iniciar_login"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass_login"/>
+
+    <TextView
+        android:id="@+id/register_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/forget"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <Button
+        android:id="@+id/register_boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="#00000000"
+        android:text="@string/registrarse"
+        android:textColor="#342cfc"
+        app:layout_constraintStart_toEndOf="@+id/register_login"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

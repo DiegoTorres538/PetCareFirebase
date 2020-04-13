@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_inicio">
+
+    <fragment
+        android:id="@+id/navigation_inicio"
+        android:name="com.diegotorres.petcarefirebase.InicioFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/navigation_pet"
+        android:name="com.diegotorres.petcarefirebase.PetFragment"
+        android:label="@string/title_pet"
+        tools:layout="@layout/fragment_pet"
+        />
+
+    <fragment
+        android:id="@+id/navigation_servicio"
+        android:name="com.diegotorres.petcarefirebase.ServicioFragment"
+        android:label="@string/title_service"
+        tools:layout="@layout/fragment_servicio"
+        />
+
+    <fragment
+        android:id="@+id/navigation_out"
+        android:name="com.diegotorres.petcarefirebase.OutFragment"
+        android:label="@string/title_perfil"
+        tools:layout="@layout/fragment_out"
+        />
+
+</navigation>
